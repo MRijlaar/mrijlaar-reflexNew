@@ -14,23 +14,15 @@
         android:text="New Button"
         android:id="@+id/EmailButton"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignEnd="@+id/emailTextfield" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Button"
         android:id="@+id/clearStatButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/toggleStat"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/emailTextfield"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -148,6 +140,7 @@
         android:id="@+id/statsBuzzTable"
         android:layout_below="@id/statsReacTable"
         android:layout_above="@id/emailTextfield"
+        android:showDividers="beginning|middle|end"
         android:stretchColumns="*">
 
 
@@ -167,9 +160,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/twoPModeString"
+                android:id="@+id/twoPModeText"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/threePModeString"
+                android:id="@+id/threePModeText"
+                android:layout_column="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/fourPModeString"
+                android:id="@+id/fourPModeText"
+                android:layout_column="3" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/p1buzzString"
                 android:id="@+id/statsBuzzP1TextView"
-                android:layout_column="1" />
+                android:layout_column="0" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -177,7 +206,12 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/p2buzzString"
                 android:id="@+id/statsBuzzP2TextView"
-                android:layout_column="2" />
+                android:layout_column="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -185,7 +219,12 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/p3buzzString"
                 android:id="@+id/statsBuzzP3TextView"
-                android:layout_column="3" />
+                android:layout_column="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -193,19 +232,6 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/p4buzzString"
                 android:id="@+id/statsBuzzP4TextView"
-                android:layout_column="4" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
-                android:id="@+id/textView6"
                 android:layout_column="0" />
         </TableRow>
 
@@ -217,21 +243,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
-                android:id="@+id/textView7"
-                android:layout_column="0" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Large Text"
-                android:id="@+id/textView8"
+                android:text="@string/totalGamesString"
+                android:id="@+id/totalGamesText"
                 android:layout_column="0" />
         </TableRow>
     </TableLayout>

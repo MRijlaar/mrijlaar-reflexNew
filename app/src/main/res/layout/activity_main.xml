@@ -16,19 +16,20 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.94"
+            android:layout_weight="1"
             android:text="@string/mainReacButtonString"
             android:id="@+id/ReacButton"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentStart="true"
             android:background="@color/greenMain"
-            android:textSize="@dimen/large_text" />
+            android:textSize="@dimen/large_text"
+            android:clickable="true"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1.14"
+            android:layout_weight="1"
             android:text="@string/mainBuzzButtonString"
             android:id="@+id/BuzzButton"
             android:layout_alignParentBottom="true"

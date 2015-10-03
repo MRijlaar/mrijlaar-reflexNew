@@ -38,13 +38,16 @@
     <string name="p4buzzString">P4</string>
     <string name="title_activity_stats">StatsActivity</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
     <string name="title_activity_reaction">reactionActivity</string>
     <string name="title_activity_player_select">PlayerSelectActivity</string>
     <string name="title_activity_buzz2_p">Buzz2PActivity</string>
     <string name="title_activity_buzz3_p">Buzz3PActivity</string>
     <string name="title_activity_buzz4_p">Buzz4PActivity</string>
+
+    <string name="twoPModeString">2P Mode</string>
+    <string name="threePModeString">3P Mode</string>
+    <string name="fourPModeString">4P Mode</string>
+    <string name="totalGamesString">Total</string>
 
 
 </resources>
