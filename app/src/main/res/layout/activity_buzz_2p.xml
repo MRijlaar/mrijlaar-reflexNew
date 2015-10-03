@@ -15,7 +15,7 @@
         android:id="@+id/p22pbuzzbutton"
         android:layout_weight="0.50"
         android:layout_margin="4dp"
-        android:textSize="@dimen/large_text"
+        android:textSize="@dimen/super_text"
         android:background="@color/greenMain" />
 
     <Button
@@ -26,7 +26,7 @@
         android:layout_weight="0.50"
         android:layout_margin="4dp"
         android:layout_gravity="center_horizontal"
-        android:textSize="@dimen/large_text"
+        android:textSize="@dimen/super_text"
         android:background="@color/blueMain" />
 
 </LinearLayout>

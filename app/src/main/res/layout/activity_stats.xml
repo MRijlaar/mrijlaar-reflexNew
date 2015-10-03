@@ -33,14 +33,17 @@
         android:layout_centerHorizontal="true" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/emailTextfield"
         android:layout_above="@+id/EmailButton"
-        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
+        android:text="@string/EmailString"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="right"
+        android:padding="@dimen/abc_control_padding_material"
         android:background="#ffffff" />
 
 
@@ -52,6 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:showDividers="middle"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/statsReacTable"
         android:stretchColumns="*">
 
         <TableRow android:gravity="center">
@@ -70,76 +75,164 @@
 
         </TableRow> <TableRow android:weightSum="100">
 
-        <TextView android:layout_column="0"
-            android:id="@+id/statReacTextView"
-            android:text="@string/ReacString"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:gravity="left"
-            android:layout_weight="20"/>
+            <TextView android:layout_column="0"
+                android:id="@+id/statReacTextView"
+                android:text="@string/ReacString"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="left"
+                android:layout_weight="20"/>
 
-        <TextView android:layout_column="1"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/StatBAllString"
-            android:id="@+id/statReacAlltextView"
-            android:gravity="center_horizontal"
-            android:layout_weight="25" />
+            <TextView android:layout_column="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/StatBAllString"
+                android:id="@+id/statReacAlltextView"
+                android:gravity="center_horizontal"
+                android:layout_weight="25" />
 
-        <TextView android:layout_column="2"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/StatB100String"
-            android:id="@+id/statReac100textView"
-            android:gravity="center_horizontal"
-            android:layout_weight="25"/>
+            <TextView android:layout_column="2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/StatB100String"
+                android:id="@+id/statReac100textView"
+                android:gravity="center_horizontal"
+                android:layout_weight="25"/>
 
-        <TextView android:layout_column="3"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/StatB10String"
-            android:id="@+id/statReac10textView"
-            android:gravity="center_horizontal"
-            android:layout_weight="25"/>
+            <TextView android:layout_column="3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/StatB10String"
+                android:id="@+id/statReac10textView"
+                android:gravity="center_horizontal"
+                android:layout_weight="25"/>
 
-    </TableRow> <TableRow>//Fastest
+        </TableRow> <TableRow>//Fastest
 
-        <TextView android:layout_column="0"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/StatFastestString"
-            android:id="@+id/statReacFasttextView"
-            android:gravity="left"
-            />
+            <TextView android:layout_column="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/StatFastestString"
+                android:id="@+id/statReacFasttextView"
+                android:gravity="left"
+                />
 
-    </TableRow><TableRow>//Slowest
+        </TableRow><TableRow>//Slowest
 
-        <TextView android:layout_column="0"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/StatSlowestString"
-            android:id="@+id/statReacSlowtextView"
-            android:gravity="left"
-            />
+            <TextView android:layout_column="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/StatSlowestString"
+                android:id="@+id/statReacSlowtextView"
+                android:gravity="left"
+                />
 
-    </TableRow><TableRow>//Average
+        </TableRow><TableRow>//Average
 
-        <TextView android:layout_column="0"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/StatAvString"
-            android:id="@+id/statReacAvtextView"
-            android:gravity="left"
-            />
+            <TextView android:layout_column="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/StatAvString"
+                android:id="@+id/statReacAvtextView"
+                android:gravity="left"
+                />
 
-    </TableRow><TableRow>//Median
+        </TableRow><TableRow>//Median
 
-        <TextView android:layout_column="0"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/StatMedString"
-            android:id="@+id/statReacMedtextView"
-            android:gravity="left"
-            />
-    </TableRow><TableRow> </TableRow>
+            <TextView android:layout_column="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/StatMedString"
+                android:id="@+id/statReacMedtextView"
+                android:gravity="left"
+                />
+        </TableRow>
+    </TableLayout>
 
-        //Buzzer
-        <TableRow>
+    //BuzzerStats
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statsBuzzTable"
+        android:layout_below="@id/statsReacTable"
+        android:layout_above="@id/emailTextfield"
+        android:stretchColumns="*">
 
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/BuzzString"
+                android:id="@+id/statbuzztextView"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p1buzzString"
+                android:id="@+id/statsBuzzP1TextView"
+                android:layout_column="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p2buzzString"
+                android:id="@+id/statsBuzzP2TextView"
+                android:layout_column="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p3buzzString"
+                android:id="@+id/statsBuzzP3TextView"
+                android:layout_column="3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/p4buzzString"
+                android:id="@+id/statsBuzzP4TextView"
+                android:layout_column="4" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView6"
+                android:layout_column="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView7"
+                android:layout_column="0" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/textView8"
+                android:layout_column="0" />
         </TableRow>
     </TableLayout>
 

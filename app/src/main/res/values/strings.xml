@@ -24,6 +24,7 @@
     <string name="StatBAllString">All</string>
     <string name="StatB100String">Last 100</string>
     <string name="StatB10String">Last 10</string>
+    <string name="EmailString">email@address.c</string>
 
     //Srings for the Player Select Screen
     <string name="ps2String">2 Players</string>
@@ -31,10 +32,10 @@
     <string name="ps4String">4 Players</string>
 
     //Strings for the Buzz games
-    <string name="p1buzzString">Player 1</string>
-    <string name="p2buzzString">Player 2</string>
-    <string name="p3buzzString">Player 3</string>
-    <string name="p4buzzString">Player 4</string>
+    <string name="p1buzzString">P1</string>
+    <string name="p2buzzString">P2</string>
+    <string name="p3buzzString">P3</string>
+    <string name="p4buzzString">P4</string>
     <string name="title_activity_stats">StatsActivity</string>
 
     <string name="hello_world">Hello world!</string>
