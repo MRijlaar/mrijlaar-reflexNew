@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pselect"
+    android:padding="4dp"
+    android:weightSum="3"
+    tools:context="ca.ualberta.cs.mrijlaar_reflex.PlayerSelectActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/ps2String"
+        android:id="@+id/buzz2Pbutton"
+        android:textSize="@dimen/large_text"
+        android:layout_margin="4dp"
+        android:background="@color/blueMain" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/ps3String"
+        android:id="@+id/buzz3Pbutton"
+        android:textSize="@dimen/large_text"
+        android:layout_margin="4dp"
+        android:background="@color/yellowMain" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/ps4String"
+        android:id="@+id/buzz4Pbutton"
+        android:textSize="@dimen/large_text"
+        android:layout_margin="4dp"
+        android:background="@color/redMain" />
+</LinearLayout>

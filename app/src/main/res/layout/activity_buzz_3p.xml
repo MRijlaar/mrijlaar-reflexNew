@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ca.ualberta.cs.mrijlaar_reflex.Buzz3PActivity"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:weightSum="3">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/p1buzzString"
+        android:id="@+id/p13pbuzzbutton"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:rotation="180"
+        android:textSize="@dimen/large_text"
+        android:background="@color/greenMain" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/p2buzzString"
+        android:id="@+id/p23pbuzzbutton"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/large_text"
+        android:background="@color/blueMain" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/p3buzzString"
+        android:id="@+id/p33pbuzzbutton"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/large_text"
+        android:background="@color/yellowMain" />
+
+</LinearLayout>

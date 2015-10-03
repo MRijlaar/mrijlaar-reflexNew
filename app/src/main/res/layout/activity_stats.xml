@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="ca.ualberta.cs.mrijlaar_reflex.StatsActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/EmailButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/clearStatButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/toggleStat"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/emailTextfield"
+        android:layout_above="@+id/EmailButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#ffffff" />
+
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:showDividers="middle"
+        android:stretchColumns="*">
+
+        <TableRow android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/StatString"
+                android:id="@+id/StatsHeader"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:textSize="@dimen/large_text"
+                android:layout_span="4"/>
+
+        </TableRow> <TableRow android:weightSum="100">
+
+        <TextView android:layout_column="0"
+            android:id="@+id/statReacTextView"
+            android:text="@string/ReacString"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="left"
+            android:layout_weight="20"/>
+
+        <TextView android:layout_column="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/StatBAllString"
+            android:id="@+id/statReacAlltextView"
+            android:gravity="center_horizontal"
+            android:layout_weight="25" />
+
+        <TextView android:layout_column="2"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/StatB100String"
+            android:id="@+id/statReac100textView"
+            android:gravity="center_horizontal"
+            android:layout_weight="25"/>
+
+        <TextView android:layout_column="3"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/StatB10String"
+            android:id="@+id/statReac10textView"
+            android:gravity="center_horizontal"
+            android:layout_weight="25"/>
+
+    </TableRow> <TableRow>//Fastest
+
+        <TextView android:layout_column="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/StatFastestString"
+            android:id="@+id/statReacFasttextView"
+            android:gravity="left"
+            />
+
+    </TableRow><TableRow>//Slowest
+
+        <TextView android:layout_column="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/StatSlowestString"
+            android:id="@+id/statReacSlowtextView"
+            android:gravity="left"
+            />
+
+    </TableRow><TableRow>//Average
+
+        <TextView android:layout_column="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/StatAvString"
+            android:id="@+id/statReacAvtextView"
+            android:gravity="left"
+            />
+
+    </TableRow><TableRow>//Median
+
+        <TextView android:layout_column="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/StatMedString"
+            android:id="@+id/statReacMedtextView"
+            android:gravity="left"
+            />
+    </TableRow><TableRow> </TableRow>
+
+        //Buzzer
+        <TableRow>
+
+
+
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>

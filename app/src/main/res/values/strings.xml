@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">mrijlaar-reflex</string>
+
+    //Strings for the Main Activity
+    <string name="mainReacButtonString">Reaction Timer</string>
+    <string name="mainBuzzButtonString">Game Show Buzzer</string>
+
+    //Strings for the ReactionTimer Game
+    <string name="reacPrevTimeString">Prev. Time</string>
+    <string name="reacButtonString1">Press To Start</string>
+    <string name="reacButtonString2">Wait For It...</string>
+    <string name="reacButtonString3">Now!</string>
+    <string name="reacButtonString4">I said Wait!</string>
+
+    //Strings for the stat screen
+    <string name="StatString">Statistics</string>
+    <string name="BuzzString">Buzzer</string>
+    <string name="ReacString">Reaction</string>
+
+    <string name="StatFastestString">Fastest</string>
+    <string name="StatSlowestString">Slowest</string>
+    <string name="StatAvString">Average</string>
+    <string name="StatMedString">Median</string>
+    <string name="StatBAllString">All</string>
+    <string name="StatB100String">Last 100</string>
+    <string name="StatB10String">Last 10</string>
+
+    //Srings for the Player Select Screen
+    <string name="ps2String">2 Players</string>
+    <string name="ps3String">3 Players</string>
+    <string name="ps4String">4 Players</string>
+
+    //Strings for the Buzz games
+    <string name="p1buzzString">Player 1</string>
+    <string name="p2buzzString">Player 2</string>
+    <string name="p3buzzString">Player 3</string>
+    <string name="p4buzzString">Player 4</string>
+    <string name="title_activity_stats">StatsActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_reaction">reactionActivity</string>
+    <string name="title_activity_player_select">PlayerSelectActivity</string>
+    <string name="title_activity_buzz2_p">Buzz2PActivity</string>
+    <string name="title_activity_buzz3_p">Buzz3PActivity</string>
+    <string name="title_activity_buzz4_p">Buzz4PActivity</string>
+
+
+</resources>
