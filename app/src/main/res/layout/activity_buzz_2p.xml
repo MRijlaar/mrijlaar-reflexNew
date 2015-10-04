@@ -4,9 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="4dp"
-    android:weightSum="1"
-    tools:context="ca.ualberta.cs.mrijlaar_reflex.Buzz2PActivity"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:weightSum="1">
 
     <Button
         android:layout_width="match_parent"
