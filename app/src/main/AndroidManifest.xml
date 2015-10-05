@@ -16,6 +16,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".StatsActivity"
+            android:label="@string/title_activity_stats">
+        </activity>
+        <activity
+            android:name=".ReactionActivity"
+            android:label="@string/title_activity_reaction">
+        </activity>
+        <activity
+            android:name=".PlayerSelectActivity"
+            android:label="@string/title_activity_player_select">
+        </activity>
+        <activity
+            android:name=".Buzz2PActivity"
+            android:label="@string/title_activity_buzz2_p">
+        </activity>
+        <activity
+            android:name=".Buzz3PActivity"
+            android:label="@string/title_activity_buzz3_p">
+        </activity>
+        <activity
+            android:name=".Buzz4PActivity"
+            android:label="@string/title_activity_buzz4_p">
+        </activity>
     </application>
 
 </manifest>

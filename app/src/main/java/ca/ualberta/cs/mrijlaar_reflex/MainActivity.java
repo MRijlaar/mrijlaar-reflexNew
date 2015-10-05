@@ -19,17 +19,22 @@
 
 package ca.ualberta.cs.mrijlaar_reflex;
 
-import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
+
+    StatsManager sm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        sm = new StatsManager();/////////////////////////////////////////////// replace when save load works
     }
 
     @Override
@@ -52,5 +57,24 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void reflexButtonClick(View v){
+        Intent intent = new Intent(this, ReactionActivity.class);
+        startActivity(intent);
+    }
+
+    public void buzzButtonClick(View v){
+        Intent intent = new Intent(this, PlayerSelectActivity.class);
+        startActivity(intent);
+    }
+
+    public void statsButtonClick(MenuItem v){
+        Intent intent = new Intent(this, StatsActivity.class);
+        startActivity(intent);
+    }
+
+    public StatsManager getSM(){
+        return this.sm;
     }
 }

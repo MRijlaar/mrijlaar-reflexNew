@@ -15,7 +15,8 @@
         android:id="@+id/buzz2Pbutton"
         android:textSize="@dimen/large_text"
         android:layout_margin="4dp"
-        android:background="@color/blueMain" />
+        android:background="@color/blueMain"
+        android:onClick="buzz2PButtonClick" />
 
     <Button
         android:layout_width="match_parent"
@@ -25,7 +26,8 @@
         android:id="@+id/buzz3Pbutton"
         android:textSize="@dimen/large_text"
         android:layout_margin="4dp"
-        android:background="@color/yellowMain" />
+        android:background="@color/yellowMain"
+        android:onClick="buzz3PButtonClick" />
 
     <Button
         android:layout_width="match_parent"
@@ -35,5 +37,6 @@
         android:id="@+id/buzz4Pbutton"
         android:textSize="@dimen/large_text"
         android:layout_margin="4dp"
-        android:background="@color/redMain" />
+        android:background="@color/redMain"
+        android:onClick="buzz4PButtonClick" />
 </LinearLayout>

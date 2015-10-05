@@ -35,6 +35,7 @@
         android:layout_alignParentBottom="true"
         android:background="@color/greenMain"
         android:textSize="@dimen/large_text"
-        android:layout_alignEnd="@+id/editText" />
+        android:layout_alignEnd="@+id/editText"
+        android:onClick="reacGameButtonClick" />
 
 </RelativeLayout>

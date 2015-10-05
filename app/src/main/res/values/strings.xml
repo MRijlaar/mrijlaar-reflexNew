@@ -26,6 +26,10 @@
     <string name="StatB10String">Last 10</string>
     <string name="EmailString">email@address.c</string>
 
+    //Strings for Stas dropdown menu
+    <string name="ClearStatsString">Clear Statistics</string>
+    <string name="EmailButtonString">Email Statistics</string>
+
     //Srings for the Player Select Screen
     <string name="ps2String">2 Players</string>
     <string name="ps3String">3 Players</string>
