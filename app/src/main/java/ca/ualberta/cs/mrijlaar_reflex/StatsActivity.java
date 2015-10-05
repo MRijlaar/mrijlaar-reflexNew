@@ -112,5 +112,7 @@ public class StatsActivity extends MainActivity {
 
         v[4]=(TextView)findViewById(R.id.m4t);
         v[4].setText(bssa.get(2).getTotalGames().toString());
+
+        saveInFile();
     }
 }

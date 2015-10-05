@@ -30,7 +30,10 @@ import android.view.MenuItem;
 import android.view.View;
 
 import java.io.*;
+import java.lang.reflect.Type;
+
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -76,7 +79,11 @@ public class MainActivity extends AppCompatActivity {
             FileInputStream fis = openFileInput(FILENAME);
             BufferedReader in = new BufferedReader(new InputStreamReader(fis));
             Gson gsom = new Gson();
-            sm = gsom.fromJson(in, StatsManager);
+            // following line based on https://google-gson.googlecode.com/svn/trunk/gson/docs/javadocs/com/google/gson/Gson.html
+            Type smType = new TypeToken<StatsManager>() {}.getType();
+            sm = gsom.fromJson(in, smType);
+            sm.getBuzzSums();
+            sm.getReacSums();
 
         } catch (FileNotFoundException e) {
             sm = new StatsManager();
@@ -86,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void saveInFile() {
+    protected void saveInFile() {
         try {
             FileOutputStream fos = openFileOutput(FILENAME, 0);
             OutputStreamWriter osw = new OutputStreamWriter(fos);
