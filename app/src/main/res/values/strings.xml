@@ -40,13 +40,13 @@
     <string name="p2buzzString">P2</string>
     <string name="p3buzzString">P3</string>
     <string name="p4buzzString">P4</string>
-    <string name="title_activity_stats">StatsActivity</string>
+    <string name="title_activity_stats">mrijlaar-reflex</string>
 
-    <string name="title_activity_reaction">reactionActivity</string>
-    <string name="title_activity_player_select">PlayerSelectActivity</string>
-    <string name="title_activity_buzz2_p">Buzz2PActivity</string>
-    <string name="title_activity_buzz3_p">Buzz3PActivity</string>
-    <string name="title_activity_buzz4_p">Buzz4PActivity</string>
+    <string name="title_activity_reaction">mrijlaar-reflex</string>
+    <string name="title_activity_player_select">mrijlaar-reflex</string>
+    <string name="title_activity_buzz2_p">mrijlaar-reflex</string>
+    <string name="title_activity_buzz3_p">mrijlaar-reflex</string>
+    <string name="title_activity_buzz4_p">mrijlaar-reflex</string>
 
     <string name="twoPModeString">2P Mode</string>
     <string name="threePModeString">3P Mode</string>

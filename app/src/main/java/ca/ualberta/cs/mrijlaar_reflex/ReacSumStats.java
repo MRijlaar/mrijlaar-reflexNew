@@ -80,9 +80,13 @@ public class ReacSumStats {
         if (size%2==1)this.median = medList.get(s);
         else {
             this.median = (al.get(s).getTime() + medList.get(s-1))/2;
+            median = (double)(((int)(median*1000))/1000);
         }
 
         this.avg=sum/size;
+
+        //round
+        avg = (double)(((int)(avg*1000))/1000);
     }
 
     public Double getFastest() {

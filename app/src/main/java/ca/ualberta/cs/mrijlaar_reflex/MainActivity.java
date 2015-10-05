@@ -19,6 +19,9 @@
 
 package ca.ualberta.cs.mrijlaar_reflex;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -74,4 +77,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void buzzAlert(int p, Context context){// code modified from StackOverFlow user David Hedlund see README for more
+        new AlertDialog.Builder(context)
+                .setTitle("Winner")
+                .setMessage("Player " + p + " buzzed first")
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // continue with delete
+                    }
+                })
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+    }
 }

@@ -44,18 +44,18 @@ public class Buzz4PActivity extends MainActivity {
     }
 
     public void p1m4Click(View v){
-        p1m4.click();
+        p1m4.click(this);
     }
 
     public void p2m4Click(View v){
-        p2m4.click();
+        p2m4.click(this);
     }
 
     public void p3m4Click(View v){
-        p3m4.click();
+        p3m4.click(this);
     }
 
     public void p4m4Click(View v){
-        p4m4.click();
+        p4m4.click(this);
     }
 }

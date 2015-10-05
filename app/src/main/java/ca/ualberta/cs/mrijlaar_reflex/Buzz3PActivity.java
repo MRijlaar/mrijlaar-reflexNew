@@ -43,14 +43,14 @@ public class Buzz3PActivity extends MainActivity {
     }
 
     public void p1m3Click(View v){
-        p1m3.click();
+        p1m3.click(this);
     }
 
     public void p2m3Click(View v){
-        p2m3.click();
+        p2m3.click(this);
     }
 
     public void p3m3Click(View v){
-        p3m3.click();
+        p3m3.click(this);
     }
 }

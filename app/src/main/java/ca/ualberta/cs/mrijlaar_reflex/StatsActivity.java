@@ -50,9 +50,10 @@ public class StatsActivity extends MainActivity {
     }
 
     public void update(){
-        ArrayList<ReacSumStats> rssa = sm.getReacSums();
+        ArrayList<ReacSumStats> rssa = sm.getReacSums();//load the ReacSumStats and display them on the stats screen
         TextView[] v = new TextView[12];
         ReacSumStats rss;
+        BuzzSumStats bss;
 
         v[0]=(TextView)findViewById(R.id.RFA);
         v[1]=(TextView)findViewById(R.id.RSA);
@@ -71,14 +72,45 @@ public class StatsActivity extends MainActivity {
 
         for (int i =0; i<rssa.size();i++){
             rss = rssa.get(i);
-            v[0+i*4].setText(rss.getFastest().toString().substring(0,3));
-            v[1+i*4].setText(rss.getSlowest().toString().substring(0,3));
-            v[2+i*4].setText(rss.getAvg().toString().substring(0,3));
-            v[3 + i * 4].setText(rss.getMedian().toString().substring(0,3));
+            v[0+i*4].setText(rss.getFastest().toString());
+            v[1+i*4].setText(rss.getSlowest().toString());
+            v[2+i*4].setText(rss.getAvg().toString());
+            v[3 + i * 4].setText(rss.getMedian().toString());
         }
 
 
-        sm.getBuzzSums();
-        ;
+        ArrayList<BuzzSumStats> bssa = sm.getBuzzSums();//load the BuzzSumStats and display them on the stats screen
+
+        v[0]=(TextView)findViewById(R.id.m2p1);
+        v[1]=(TextView)findViewById(R.id.m2p2);
+
+        v[4]=(TextView)findViewById(R.id.m3p1);
+        v[5]=(TextView)findViewById(R.id.m3p2);
+        v[6]=(TextView)findViewById(R.id.m3p3);
+
+        v[8]=(TextView)findViewById(R.id.m4p1);
+        v[9]=(TextView)findViewById(R.id.m4p2);
+        v[10]=(TextView)findViewById(R.id.m4p3);
+        v[11]=(TextView)findViewById(R.id.m4p4);
+
+        int s = bssa.size();
+        for (int i =0; i<s;i++){
+            bss = bssa.get(i);
+
+            v[0+i*4].setText(bss.getP1Wins().toString());
+            v[1+i*4].setText(bss.getP2Wins().toString());
+            if(i<bss.getMode())v[2+i*4].setText(bss.getP3Wins().toString());
+            if(i<bss.getMode())v[3 + i * 4].setText(bss.getP4Wins().toString());
+        }
+
+
+        v[2]=(TextView)findViewById(R.id.m2t);
+        v[2].setText(bssa.get(0).getTotalGames().toString());
+
+        v[3]=(TextView)findViewById(R.id.m3t);
+        v[3].setText(bssa.get(1).getTotalGames().toString());
+
+        v[4]=(TextView)findViewById(R.id.m4t);
+        v[4].setText(bssa.get(2).getTotalGames().toString());
     }
 }

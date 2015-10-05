@@ -42,10 +42,10 @@ public class Buzz2PActivity extends MainActivity {
     }
 
     public void p1m2Click(View v){
-        p1m2.click();
+        p1m2.click(this);
     }
 
     public void p2m2Click(View v){
-        p2m2.click();
+        p2m2.click(this);
     }
 }

@@ -21,7 +21,6 @@
             android:id="@+id/p14pbuzzbutton"
             android:background="@color/greenMain"
             android:textSize="@dimen/super_text"
-            android:rotation="180"
             android:layout_margin="4dp"
             android:onClick="p1m4Click" />
 
@@ -32,7 +31,6 @@
             android:text="@string/p2buzzString"
             android:id="@+id/p24pbutton"
             android:background="@color/blueMain"
-            android:rotation="180"
             android:textSize="@dimen/super_text"
             android:layout_margin="4dp"
             android:onClick="p2m4Click" />

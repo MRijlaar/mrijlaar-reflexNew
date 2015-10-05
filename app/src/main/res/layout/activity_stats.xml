@@ -271,6 +271,30 @@
                 android:id="@+id/statsBuzzP1TextView"
                 android:layout_column="0" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/m2p1"
+                android:layout_column="1"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/m3p1"
+                android:layout_column="2"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/m4p1"
+                android:layout_column="3"
+                android:layout_gravity="right" />
+
         </TableRow>
 
         <TableRow
@@ -284,6 +308,30 @@
                 android:text="@string/p2buzzString"
                 android:id="@+id/statsBuzzP2TextView"
                 android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/m2p2"
+                android:layout_column="1"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/m3p2"
+                android:layout_column="2"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/m4p2"
+                android:layout_column="3"
+                android:layout_gravity="right" />
         </TableRow>
 
         <TableRow
@@ -297,6 +345,22 @@
                 android:text="@string/p3buzzString"
                 android:id="@+id/statsBuzzP3TextView"
                 android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/m3p3"
+                android:layout_column="2"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/m4p3"
+                android:layout_column="3"
+                android:layout_gravity="right" />
         </TableRow>
 
         <TableRow
@@ -310,6 +374,14 @@
                 android:text="@string/p4buzzString"
                 android:id="@+id/statsBuzzP4TextView"
                 android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/m4p4"
+                android:layout_column="3"
+                android:layout_gravity="right" />
         </TableRow>
 
         <TableRow
@@ -323,6 +395,30 @@
                 android:text="@string/totalGamesString"
                 android:id="@+id/totalGamesText"
                 android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/m2t"
+                android:layout_column="1"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/m3t"
+                android:layout_column="2"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/m4t"
+                android:layout_column="3"
+                android:layout_gravity="right" />
         </TableRow>
     </TableLayout>
 
