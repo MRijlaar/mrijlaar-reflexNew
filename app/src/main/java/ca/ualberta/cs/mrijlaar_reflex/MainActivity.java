@@ -28,9 +28,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import java.io.*;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String FILENAME = "file.sav";
     static StatsManager sm;
 
     @Override
@@ -60,6 +62,42 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        loadFromFile();
+    }
+
+    private void loadFromFile() {
+        try {
+            FileInputStream fis = openFileInput(FILENAME);
+            BufferedReader in = new BufferedReader(new InputStreamReader(fis));
+            Gson gsom = new Gson();
+            sm = gsom.fromJson(in, StatsManager);
+
+        } catch (FileNotFoundException e) {
+            sm = new StatsManager();
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void saveInFile() {
+        try {
+            FileOutputStream fos = openFileOutput(FILENAME, 0);
+            OutputStreamWriter osw = new OutputStreamWriter(fos);
+            Gson gson = new Gson();
+            gson.toJson(sm, osw);
+            osw.flush();
+            fos.close();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void reflexButtonClick(View v){
