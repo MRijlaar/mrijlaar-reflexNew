@@ -20,7 +20,6 @@ public class StatsManager {
 
     public void addReac(ReacStat rs) {
         this.reacStats.add(rs);
-        ;
     }
 
     public void addBuzz(BuzzStat b){
@@ -103,5 +102,12 @@ public class StatsManager {
 
 
         return ret;
+    }
+
+    public void clear(){
+        reacStats.clear();
+        reacSums.clear();
+        buzzStats.clear();
+        buzzSums.clear();
     }
 }

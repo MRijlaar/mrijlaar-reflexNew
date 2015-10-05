@@ -46,7 +46,8 @@ public class StatsActivity extends MainActivity {
     }
 
     public void clearStatsButtonClicked(MenuItem v){
-
+        sm.clear();
+        update();
     }
 
     public void update(){
@@ -75,7 +76,7 @@ public class StatsActivity extends MainActivity {
             v[0+i*4].setText(rss.getFastest().toString());
             v[1+i*4].setText(rss.getSlowest().toString());
             v[2+i*4].setText(rss.getAvg().toString());
-            v[3 + i * 4].setText(rss.getMedian().toString());
+            v[3 + i*4].setText(rss.getMedian().toString());
         }
 
 

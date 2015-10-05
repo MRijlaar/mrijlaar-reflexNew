@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    protected void saveInFile() {
+    public void saveInFile() {
         try {
             FileOutputStream fos = openFileOutput(FILENAME, 0);
             OutputStreamWriter osw = new OutputStreamWriter(fos);
