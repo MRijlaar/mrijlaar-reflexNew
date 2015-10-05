@@ -7,7 +7,7 @@ import junit.framework.TestCase;
 /**
  * Created by mrijlaar on 10/3/15.
  */
-public class BuzzButtonTest extends TestCase {
+public class BuzzerTest extends TestCase {
 
 
 }

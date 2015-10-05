@@ -14,7 +14,8 @@
         android:layout_weight="0.50"
         android:layout_margin="4dp"
         android:textSize="@dimen/super_text"
-        android:background="@color/greenMain" />
+        android:background="@color/greenMain"
+        android:onClick="p1m2Click" />
 
     <Button
         android:layout_width="match_parent"
@@ -25,6 +26,7 @@
         android:layout_margin="4dp"
         android:layout_gravity="center_horizontal"
         android:textSize="@dimen/super_text"
-        android:background="@color/blueMain" />
+        android:background="@color/blueMain"
+        android:onClick="p2m2Click" />
 
 </LinearLayout>

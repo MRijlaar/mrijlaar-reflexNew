@@ -20,6 +20,7 @@ public class StatsManager {
 
     public void addReac(ReacStat rs) {
         this.reacStats.add(rs);
+        ;
     }
 
     public void addBuzz(BuzzStat b){
@@ -70,10 +71,10 @@ public class StatsManager {
         reacSums.add(new ReacSumStats(reacStats));
 
         if (size>=100) reacSums.add(new ReacSumStats(reacStats.subList(size-100,size-1)));
-        else reacSums.add(new ReacSumStats());
+        else reacSums.add(reacSums.get(0));
 
         if (size>=10) reacSums.add(new ReacSumStats(reacStats.subList(size-10,size-1)));
-        else reacSums.add(new ReacSumStats());
+        else reacSums.add(reacSums.get(0));
 
         return reacSums;
     }

@@ -28,13 +28,13 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    StatsManager sm;
+    static StatsManager sm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        sm = new StatsManager();/////////////////////////////////////////////// replace when save load works
+        if(this.sm==null)sm = new StatsManager();/////////////////////////////////////////////// replace when save load works
     }
 
     @Override
@@ -74,7 +74,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public StatsManager getSM(){
-        return this.sm;
-    }
 }

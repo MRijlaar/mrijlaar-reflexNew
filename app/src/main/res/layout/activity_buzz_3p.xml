@@ -13,7 +13,8 @@
         android:layout_margin="4dp"
         android:rotation="180"
         android:textSize="@dimen/super_text"
-        android:background="@color/greenMain" />
+        android:background="@color/greenMain"
+        android:onClick="p1m3Click" />
 
     <Button
         android:layout_width="match_parent"
@@ -24,7 +25,8 @@
         android:layout_margin="4dp"
         android:layout_gravity="center_horizontal"
         android:textSize="@dimen/super_text"
-        android:background="@color/blueMain" />
+        android:background="@color/blueMain"
+        android:onClick="p2m3Click" />
 
     <Button
         android:layout_width="match_parent"
@@ -35,6 +37,7 @@
         android:layout_margin="4dp"
         android:layout_gravity="center_horizontal"
         android:textSize="@dimen/super_text"
-        android:background="@color/yellowMain" />
+        android:background="@color/yellowMain"
+        android:onClick="p3m3Click" />
 
 </LinearLayout>
